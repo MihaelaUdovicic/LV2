@@ -41,7 +41,7 @@ namespace LV2
 
     public void Log(ILogable message)
     {
-        if (this.type.Equals("File"))
+        if (this.filePath.Equals("File"))
         {
             using (System.IO.StreamWriter writer = new System.IO.StreamWriter(this.filePath))
 
